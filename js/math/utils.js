@@ -61,3 +61,8 @@ function getNearestPoint(loc, points, threshold = Number.MAX_SAFE_INTEGER) {
 function lerp(a, b, t){
    return a + (b - a) * t;
 }
+
+function getRandomColor() {
+   const hue = 290 + Math.random() * 260;
+   return "hsl(" + hue + ", 100%, 60%)";
+}
