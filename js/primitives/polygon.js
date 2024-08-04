@@ -9,6 +9,14 @@ class Polygon {
         }
     }
 
+    static multiBreak(polys) {
+        for (let i = 0; i < polys.length - 1; i++) {
+            for (let j = i + 1; j < polys.length; j++) {
+                this.break(polys[1], polys[j]);
+            }
+        }
+    }
+
     static break(poly1, poly2) {
         const segs1 = poly1.segments;
         const segs2 = poly2.segments;
